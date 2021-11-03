@@ -14,24 +14,6 @@ Welcome to the [UN / DISI](http://www.ingenieria.unal.edu.co/dependencias/depart
 - Daniel Ricardo Mendivelso Velandia
 - Felipe Esteban Riaño Pineda
 
-## **Prospecto Integrantes**
-
-### Juan Pablo Carmona Muñoz
-
-Soy Juan Pablo, tengo 21 años voy en 8vo semestre, mis hobbies son jugar video juegos, ver películas, series y aprender nuevas cosas del mundo de la programación. De esta materia espero aprender conceptos de diseño y animación en el campo de la programación, las cuales pueda aplicar en mis futuros proyectos, para obtener de estos mejores resultados.
-
-### Jonathan Andres Jimenez Trujillo
-
-Soy estudiante de Ingenieria de Sistemas en octavo semestre, dentro de mis hobbies tengo el aprender idiomas, ya se ingles y portugues y me encuentro estudiando francés. Al igual tambien me gusta jugar videojuegos como VALORANT o League of Legends y realizar sudokus. De la materia espero profundizar mis conocimiento en animaciones haciendo uso de processing y esto aplicarlo a futuros proyectos en mi etapa laboral.
-
-### Daniel Ricardo Mendivelso Velandia
-
-Mi nombre es Daniel, tengo 20 años, y me encuentro en 8vo semestre de Ingenieria de Sistemas. Me llama la atencion el desarrollo y la actualidad en hardware y software. Espero de este curso aprender sobre la parte visual de los computadores y como esta tiene influencia en la percepcion que se tiene hacia estos.
-
-### Felipe Esteban Riaño Pineda
-
-Soy estudiante de Ingeniería de Sistemas y Computación, actualmente curso octavo semestre. Me llama la atención la ciberseguridad y el desarrollo. Mi expectativa del curso es adquirir mucho conocimiento sobre la computación visual y poder aplicarla a futuro en los proyectos que se me presenten a nivel personal y profesional.
-
 ## Goal
 
 To study the process of creation and manipulation of a digital image of a modern visual application, using current hardware.
