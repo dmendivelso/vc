@@ -1,6 +1,11 @@
 new p5((p) => {
   let img; // Declare variable 'img'.
+  //arreglo de lineas
   let lines = [];
+  //posicion inicial desde donde empiezan a dibujarse las lineas
+  let posX = 500;
+  //cantidad de movimiento
+  let move = 0.5;
 
   p.setup = function () {
     p.createCanvas(800, 350);
@@ -11,33 +16,26 @@ new p5((p) => {
     let i = 0;
     //vertical lines
     for (var x = step; x < p.width; x = x + step) {
-      lines[i] = new Line(p.mouseX + x, 0, p.mouseX + x, p.height);
+      lines[i] = new Line(x, 0, x, p.height);
       i++;
     }
-
-    p.button = p.createButton("animation");
-    p.button.position(img.x + img.width, 65);
-    p.button.mousePressed(p.greet);
   };
 
   p.draw = function () {
-    // Displays the image at its actual size at point (0,0)
     p.image(img, 0, 0, img.width + img.width / 4, img.height + img.height / 4);
 
     for (var i = 0; i < lines.length; i++) {
-      lines[i].display();
+      if (i == 0 && lines[i].x1 == -480) {
+        move = 0.5;
+      } else if (i == 0 && lines[i].x1 == 15) {
+        move = -0.5;
+      }
+      lines[i].display(posX, 0, posX, 0);
+      lines[i].move(move);
     }
   };
 
-  p.greet = function () {
-    p.erase();
-    var step = 15;
-    for (var x = step; x < p.width; x = x + step) {
-      p.line(1 + x, 0, 1 + x, p.height);
-    }
-  };
-
-  // Jitter class
+  // Line class
   class Line {
     constructor(x1, y1, x2, y2) {
       this.x1 = x1;
@@ -47,11 +45,12 @@ new p5((p) => {
     }
 
     move(movex) {
-      this.x += movex;
+      this.x1 += movex;
+      this.x2 += movex;
     }
 
-    display() {
-      p.line(this.x1, this.y1, this.x2, this.y2);
+    display(x1, y1, x2, y2) {
+      p.line(x1 + this.x1, y1 + this.y1, x2 + this.x2, y2 + this.y2);
     }
   }
 }, "kinegram");
