@@ -8,7 +8,7 @@ var p,
 let circleX = [];
 let circleY = [];
 function setup() {
-  createCanvas(821, 821);
+  createCanvas(621, 621);
   frameRate(5);
   move = 0;
   r = 19;
