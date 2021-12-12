@@ -6,6 +6,7 @@ headless: true
 - [Integrantes]({{< relref "/docs/shortcodes/integrantes" >}})
 - [p5]({{< relref "/docs/shortcodes/p5" >}})
 - [Buttons]({{< relref "/docs/shortcodes/buttons" >}})
+- [Rasterization]({{< relref "/docs/shortcodes/rasterization" >}})
 - [Columns]({{< relref "/docs/shortcodes/columns" >}})
 - [Expand]({{< relref "/docs/shortcodes/expand" >}})
 - [Hints]({{< relref "/docs/shortcodes/hints" >}})
