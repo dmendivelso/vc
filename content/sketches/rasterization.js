@@ -16,7 +16,7 @@ function setup() {
   decrease = true;
   resetSketch();
   var button = createButton("Change radius");
-  button.position(50, 50);
+  button.position(100, 50);
   button.mousePressed(resetSketch);
 
   var button2 = createButton("decrese size");
