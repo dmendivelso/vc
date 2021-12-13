@@ -2,12 +2,12 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Algoritmo del Pintor #  Historia #  El algoritmo del pintor se desempeña en la computación visual en 3D, en especial como algoritmo visual, este se caracteriza principalmente por su simplicidad en la aplicación. El algoritmo fue propuesto por primera vez por Martin Newell, Richard Newell y Tom Sancha en el año 1972 con el fin de solucionar el problema de “Hidden-surface determination” (Determinación de la Superficie Oculta).
-Fundamentos #  Este algoritmo se puede implementar basándose en el ordenamiento topológico, el cual se describe como un grafo dirigido de forma lineal de sus nodos, orientando en este caso esa linealidad en función de la profundidad de los polígonos que se encuentran en la figura, ilustración o imagen.">
+<meta name=description content="Algoritmo del Pintor #  Tomado de: https://en.wikipedia.org/wiki/Painter%27s_algorithm
+Historia #  El algoritmo del pintor se desempeña en la computación visual en 3D, en especial como algoritmo visual, este se caracteriza principalmente por su simplicidad en la aplicación. El algoritmo fue propuesto por primera vez por Martin Newell, Richard Newell y Tom Sancha en el año 1972 con el fin de solucionar el problema de “Hidden-surface determination” (Determinación de la Superficie Oculta).">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content>
-<meta property="og:description" content="Algoritmo del Pintor #  Historia #  El algoritmo del pintor se desempeña en la computación visual en 3D, en especial como algoritmo visual, este se caracteriza principalmente por su simplicidad en la aplicación. El algoritmo fue propuesto por primera vez por Martin Newell, Richard Newell y Tom Sancha en el año 1972 con el fin de solucionar el problema de “Hidden-surface determination” (Determinación de la Superficie Oculta).
-Fundamentos #  Este algoritmo se puede implementar basándose en el ordenamiento topológico, el cual se describe como un grafo dirigido de forma lineal de sus nodos, orientando en este caso esa linealidad en función de la profundidad de los polígonos que se encuentran en la figura, ilustración o imagen.">
+<meta property="og:description" content="Algoritmo del Pintor #  Tomado de: https://en.wikipedia.org/wiki/Painter%27s_algorithm
+Historia #  El algoritmo del pintor se desempeña en la computación visual en 3D, en especial como algoritmo visual, este se caracteriza principalmente por su simplicidad en la aplicación. El algoritmo fue propuesto por primera vez por Martin Newell, Richard Newell y Tom Sancha en el año 1972 con el fin de solucionar el problema de “Hidden-surface determination” (Determinación de la Superficie Oculta).">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/Algoritmo-de-Pintor/"><meta property="article:section" content="docs">
 <meta property="article:modified_time" content="2021-12-13T09:42:24-05:00">
@@ -16,7 +16,7 @@ Fundamentos #  Este algoritmo se puede implementar basándose en el ordenamiento
 <link rel=icon href=/vc/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/vc/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/vc/flexsearch.min.js></script>
-<script defer src=/vc/en.search.min.c09eb2c34511fd16caad5efd0fe2ec1024f7cfa7273068bf1fad036714292f72.js integrity="sha256-wJ6yw0UR/RbKrV79D+LsECT3z6cnMGi/H60DZxQpL3I=" crossorigin=anonymous></script>
+<script defer src=/vc/en.search.min.85fd809e7523105d5ea3d7cd072cdb5fa11d3a5881d27122001aad06fd3f3209.js integrity="sha256-hf2AnnUjEF1eo9fNByzbX6EdOliB0nEiABqtBv0/Mgk=" crossorigin=anonymous></script>
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -173,7 +173,8 @@ Blog
 Algoritmo del Pintor
 <a class=anchor href=#algoritmo-del-pintor>#</a>
 </h2>
-<p><img src="https://github.com/dmendivelso/vc/blob/main/content/imgs/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.gif?raw=true" alt></p>
+<p><img src="https://github.com/dmendivelso/vc/blob/main/content/imgs/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.gif?raw=true" alt>
+Tomado de: <a href=https://en.wikipedia.org/wiki/Painter%27s_algorithm>https://en.wikipedia.org/wiki/Painter%27s_algorithm</a></p>
 <h3 id=historia>
 Historia
 <a class=anchor href=#historia>#</a>
@@ -209,13 +210,15 @@ Problemas
 <li>Superposición cíclica:</li>
 </ol>
 <p>Esta situación se presenta en el momento en el que el algoritmo no es capaz de diferenciar y ordenar a un conjunto de polígonos, el ejemplo base que se plantea en el cual falla es:</p>
-<p><img src=https://www.researchgate.net/profile/Csaba-Toth-10/publication/228678743/figure/fig1/AS:393726032662531@1470883009610/Objects-may-have-cyclic-overlaps.png alt></p>
+<p><img src=https://www.researchgate.net/profile/Csaba-Toth-10/publication/228678743/figure/fig1/AS:393726032662531@1470883009610/Objects-may-have-cyclic-overlaps.png alt>
+Tomado de: <a href=https://www.researchgate.net/figure/Objects-may-have-cyclic-overlaps_fig1_228678743>https://www.researchgate.net/figure/Objects-may-have-cyclic-overlaps_fig1_228678743</a></p>
 <p>En estos ejemplos se puede identificar fácilmente posibles escenarios en los que fallara el algoritmo.</p>
 <ol start=2>
 <li>Perforación polígonos:</li>
 </ol>
 <p>Este escenario se presenta en el momento en el que los polígonos se intersectan entre ellos mismos, para este problema Martin Newell propone una solución, la cual es la división que intervengan en este caso (también aplica en el caso de la superposición cíclica).</p>
-<p><img src="https://github.com/dmendivelso/vc/blob/main/content/imgs/Perf_poligonos.png?raw=true" alt=poligonos></p>
+<p><img src="https://github.com/dmendivelso/vc/blob/main/content/imgs/Perf_poligonos.png?raw=true" alt=poligonos>
+Tomado de: <a href=https://slideplayer.com/slide/4457863/>https://slideplayer.com/slide/4457863/</a></p>
 <ol start=3>
 <li>Eficiencia:</li>
 </ol>
