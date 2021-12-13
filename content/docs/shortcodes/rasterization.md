@@ -2,6 +2,8 @@
 
 ## Algoritmo del Pintor
 
+![Demostracion] (https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.480p.vp9.webm)
+
 ### Historia
 
 El algoritmo del pintor se desempeña en la computación visual en 3D, en especial como algoritmo visual, este se caracteriza principalmente por su simplicidad en la aplicación.
@@ -34,16 +36,17 @@ Esta situación se presenta en el momento en el que el algoritmo no es capaz de 
 
 ![clasica](https://www.researchgate.net/profile/Csaba-Toth-10/publication/228678743/figure/fig1/AS:393726032662531@1470883009610/Objects-may-have-cyclic-overlaps.png)
 
+En estos ejemplos se puede identificar fácilmente posibles escenarios en los que fallara el algoritmo.
+
 2. Perforación polígonos:
 
 Este escenario se presenta en el momento en el que los polígonos se intersectan entre ellos mismos, para este problema Martin Newell propone una solución, la cual es la división que intervengan en este caso (también aplica en el caso de la superposición cíclica).
 
-![poligonos](./imgs/Perf_poligonos.png)
+![poligonos](/content/imgs/Perf_poligonos.png)
 
 3. Eficiencia:
 
 En caso de requerirse un algoritmo de visibilidad, el algoritmo del pintor no se presentaría como una opción eficiente, debido a que al momento de implementar el mismo, se debe tener en cuenta todos los polígonos que componen la escena, imagen o figura.
-
 
 
 # Rasterization workshop
