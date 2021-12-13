@@ -4,7 +4,7 @@
 
 <img style="float: right;" src="https://cdn.discordapp.com/attachments/691796325670453288/919802702295355392/Genesis_fractal_landscape_software_Commodore_Amiga.webm.360p.webm">
 
-![](content/imgs/Genesis_fractal_landscape_software_(Commodore_Amiga).gif)
+![](https://github.com/dmendivelso/vc/blob/main/content/imgs/Genesis_fractal_landscape_software_(Commodore_Amiga).gif?raw=true)
 
 ### Historia
 
