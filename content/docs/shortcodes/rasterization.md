@@ -2,7 +2,7 @@
 
 ## Algoritmo del Pintor
 
-[![Watch the video](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/260px--Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.jpg)] (https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.480p.vp9.webm)
+<img style="float: right;" src="https://cdn.discordapp.com/attachments/691796325670453288/919802702295355392/Genesis_fractal_landscape_software_Commodore_Amiga.webm.360p.webm">
 
 ### Historia
 
