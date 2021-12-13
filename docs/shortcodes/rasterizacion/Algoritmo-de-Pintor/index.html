@@ -2,19 +2,21 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global. #  Algoritmo del Pintor #  Historia #  El algoritmo del pintor se desempeña en la computación visual en 3D, en especial como algoritmo visual, este se caracteriza principalmente por su simplicidad en la aplicación. El algoritmo fue propuesto por primera vez por Martin Newell, Richard Newell y Tom Sancha en el año 1972 con el fin de solucionar el problema de “Hidden-surface determination” (Determinación de la Superficie Oculta).">
+<meta name=description content="Algoritmo del Pintor #  Historia #  El algoritmo del pintor se desempeña en la computación visual en 3D, en especial como algoritmo visual, este se caracteriza principalmente por su simplicidad en la aplicación. El algoritmo fue propuesto por primera vez por Martin Newell, Richard Newell y Tom Sancha en el año 1972 con el fin de solucionar el problema de “Hidden-surface determination” (Determinación de la Superficie Oculta).
+Fundamentos #  Este algoritmo se puede implementar basándose en el ordenamiento topológico, el cual se describe como un grafo dirigido de forma lineal de sus nodos, orientando en este caso esa linealidad en función de la profundidad de los polígonos que se encuentran en la figura, ilustración o imagen.">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content>
-<meta property="og:description" content="Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global. #  Algoritmo del Pintor #  Historia #  El algoritmo del pintor se desempeña en la computación visual en 3D, en especial como algoritmo visual, este se caracteriza principalmente por su simplicidad en la aplicación. El algoritmo fue propuesto por primera vez por Martin Newell, Richard Newell y Tom Sancha en el año 1972 con el fin de solucionar el problema de “Hidden-surface determination” (Determinación de la Superficie Oculta).">
+<meta property="og:description" content="Algoritmo del Pintor #  Historia #  El algoritmo del pintor se desempeña en la computación visual en 3D, en especial como algoritmo visual, este se caracteriza principalmente por su simplicidad en la aplicación. El algoritmo fue propuesto por primera vez por Martin Newell, Richard Newell y Tom Sancha en el año 1972 con el fin de solucionar el problema de “Hidden-surface determination” (Determinación de la Superficie Oculta).
+Fundamentos #  Este algoritmo se puede implementar basándose en el ordenamiento topológico, el cual se describe como un grafo dirigido de forma lineal de sus nodos, orientando en este caso esa linealidad en función de la profundidad de los polígonos que se encuentran en la figura, ilustración o imagen.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://dmendivelso.github.io/vc/docs/shortcodes/rasterization/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-12-12T23:23:07-05:00">
-<title>Rasterization | Visual Computing</title>
+<meta property="og:url" content="https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/Algoritmo-de-Pintor/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2021-12-13T09:42:24-05:00">
+<title>Algoritmo De Pintor | Visual Computing</title>
 <link rel=manifest href=/vc/manifest.json>
 <link rel=icon href=/vc/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/vc/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/vc/flexsearch.min.js></script>
-<script defer src=/vc/en.search.min.b245d4d7f5a1cc83c7f7efd444ee68eef521847b3cf8766aa98f2588f27163d0.js integrity="sha256-skXU1/WhzIPH9+/URO5o7vUhhHs8+HZqqY8liPJxY9A=" crossorigin=anonymous></script>
+<script defer src=/vc/en.search.min.c09eb2c34511fd16caad5efd0fe2ec1024f7cfa7273068bf1fad036714292f72.js integrity="sha256-wJ6yw0UR/RbKrV79D+LsECT3z6cnMGi/H60DZxQpL3I=" crossorigin=anonymous></script>
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -92,7 +94,18 @@
 </ul>
 </li>
 <li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterization/ class=active>Rasterization</a>
+<input type=checkbox id=section-36e68ea61276d314d189c2f323841b31 class=toggle checked>
+<label for=section-36e68ea61276d314d189c2f323841b31 class="flex justify-between">
+<a href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/>Rasterizacion</a>
+</label>
+<ul>
+<li>
+<a href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/Algoritmo-de-Pintor/ class=active>Algoritmo De Pintor</a>
+</li>
+<li>
+<a href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/Midpoint-circle-algorithm/>Midpoint Circle Algorithm</a>
+</li>
+</ul>
 </li>
 <li>
 <a href=https://dmendivelso.github.io/vc/docs/shortcodes/tabs/>Tabs</a>
@@ -131,7 +144,7 @@ Blog
 <label for=menu-control>
 <img src=/vc/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>Rasterization</strong>
+<strong>Algoritmo De Pintor</strong>
 <label for=toc-control>
 <img src=/vc/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
@@ -139,7 +152,7 @@ Blog
 <aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#realizar-una-indagación-teórica-de-algún-algoritmo-de-visibilidad-o-algún-método-de-iluminación-global>Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global.</a>
+<li>
 <ul>
 <li><a href=#algoritmo-del-pintor>Algoritmo del Pintor</a>
 <ul>
@@ -152,16 +165,11 @@ Blog
 </li>
 </ul>
 </li>
-<li><a href=#rasterization-workshop>Rasterization workshop</a></li>
 </ul>
 </nav>
 </aside>
 </header>
-<article class=markdown><h1 id=realizar-una-indagación-teórica-de-algún-algoritmo-de-visibilidad-o-algún-método-de-iluminación-global>
-Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global.
-<a class=anchor href=#realizar-una-indagaci%c3%b3n-te%c3%b3rica-de-alg%c3%ban-algoritmo-de-visibilidad-o-alg%c3%ban-m%c3%a9todo-de-iluminaci%c3%b3n-global>#</a>
-</h1>
-<h2 id=algoritmo-del-pintor>
+<article class=markdown><h2 id=algoritmo-del-pintor>
 Algoritmo del Pintor
 <a class=anchor href=#algoritmo-del-pintor>#</a>
 </h2>
@@ -212,38 +220,10 @@ Problemas
 <li>Eficiencia:</li>
 </ol>
 <p>En caso de requerirse un algoritmo de visibilidad, el algoritmo del pintor no se presentaría como una opción eficiente, debido a que al momento de implementar el mismo, se debe tener en cuenta todos los polígonos que componen la escena, imagen o figura.</p>
-<h1 id=rasterization-workshop>
-Rasterization workshop
-<a class=anchor href=#rasterization-workshop>#</a>
-</h1>
-<p>Buttons are styled links that can lead to local page or external link.</p>
-<details><summary>Midpoint circle algorithm</summary>
-<div class=markdown-inner>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>{{&lt; <span style=color:#f92672>p5-iframe</span> <span style=color:#a6e22e>sketch</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/vc/sketches/rasterization.js&#34;</span> <span style=color:#a6e22e>width</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;646&#34;</span> <span style=color:#a6e22e>height</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;646&#34;</span> &gt;}}
-</code></pre></div>
-</div>
-</details>
-<iframe id=rasterization style=width:646px;height:646px srcdoc="
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js></script>
-            <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js></script>
-            
-            
-            
-            
-            
-            <script src=/vc/sketches/rasterization.js></script>
-          </head>
-          <body>
-          </body>
-        </html>
-      "></iframe>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/c7f6ef51bf49322643f83f7ba5dc3d7c1cca7fc4 title="Last modified by Jonathan Andres Jimenez Trujillo | December 13, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/cfbb8c810e5aceb14efd7ff8e7d35821c9dbd342 title="Last modified by dmendivelso | December 13, 2021" target=_blank rel=noopener>
 <img src=/vc/svg/calendar.svg class=book-icon alt=Calendar>
 <span>December 13, 2021</span>
 </a>
@@ -259,7 +239,7 @@ Rasterization workshop
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#realizar-una-indagación-teórica-de-algún-algoritmo-de-visibilidad-o-algún-método-de-iluminación-global>Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global.</a>
+<li>
 <ul>
 <li><a href=#algoritmo-del-pintor>Algoritmo del Pintor</a>
 <ul>
@@ -272,7 +252,6 @@ Rasterization workshop
 </li>
 </ul>
 </li>
-<li><a href=#rasterization-workshop>Rasterization workshop</a></li>
 </ul>
 </nav>
 </div>

@@ -2,21 +2,19 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Rendering #  Propósito #  Realizar indagación teórica-práctica de rendering.
-Tareas #   Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global. Implementar la visualización de un algoritmo de rasterización, e.g., líneas, círculos, antialiasing. Acá se pueden apreciar visualizaciones para la rasterización de un triángulo que pueden servir de modelo.  Entrega #  Plazo para hacer commit del repositorio a github: 13/12/21 y 6/12/21 a las 24h, grupos 1 y 2 respectivamente.">
+<meta name=description content="Workshop 2 #  Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global.">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content>
-<meta property="og:description" content="Rendering #  Propósito #  Realizar indagación teórica-práctica de rendering.
-Tareas #   Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global. Implementar la visualización de un algoritmo de rasterización, e.g., líneas, círculos, antialiasing. Acá se pueden apreciar visualizaciones para la rasterización de un triángulo que pueden servir de modelo.  Entrega #  Plazo para hacer commit del repositorio a github: 13/12/21 y 6/12/21 a las 24h, grupos 1 y 2 respectivamente.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://dmendivelso.github.io/vc/docs/workshops/rendering/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-11-29T10:53:05-05:00">
-<title>Rendering | Visual Computing</title>
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/">
+<title>Rasterizacion | Visual Computing</title>
 <link rel=manifest href=/vc/manifest.json>
 <link rel=icon href=/vc/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/vc/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/vc/flexsearch.min.js></script>
 <script defer src=/vc/en.search.min.c09eb2c34511fd16caad5efd0fe2ec1024f7cfa7273068bf1fad036714292f72.js integrity="sha256-wJ6yw0UR/RbKrV79D+LsECT3z6cnMGi/H60DZxQpL3I=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/index.xml title="Visual Computing">
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -94,9 +92,9 @@ Tareas #   Realizar una indagación teórica de algún algoritmo de visibilidad 
 </ul>
 </li>
 <li>
-<input type=checkbox id=section-36e68ea61276d314d189c2f323841b31 class=toggle>
+<input type=checkbox id=section-36e68ea61276d314d189c2f323841b31 class=toggle checked>
 <label for=section-36e68ea61276d314d189c2f323841b31 class="flex justify-between">
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/>Rasterizacion</a>
+<a href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/ class=active>Rasterizacion</a>
 </label>
 <ul>
 <li>
@@ -113,7 +111,7 @@ Tareas #   Realizar una indagación teórica de algún algoritmo de visibilidad 
 </ul>
 </li>
 <li>
-<input type=checkbox id=section-191d4fa5967ce9fef74cb18feb81d534 class=toggle checked>
+<input type=checkbox id=section-191d4fa5967ce9fef74cb18feb81d534 class=toggle>
 <label for=section-191d4fa5967ce9fef74cb18feb81d534 class="flex justify-between">
 <a role=button>Workshops</a>
 </label>
@@ -122,7 +120,7 @@ Tareas #   Realizar una indagación teórica de algún algoritmo de visibilidad 
 <a href=https://dmendivelso.github.io/vc/docs/workshops/optical_illusions/>Optical Illusions</a>
 </li>
 <li>
-<a href=https://dmendivelso.github.io/vc/docs/workshops/rendering/ class=active>Rendering</a>
+<a href=https://dmendivelso.github.io/vc/docs/workshops/rendering/>Rendering</a>
 </li>
 </ul>
 </li>
@@ -144,7 +142,7 @@ Blog
 <label for=menu-control>
 <img src=/vc/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>Rendering</strong>
+<strong>Rasterizacion</strong>
 <label for=toc-control>
 <img src=/vc/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
@@ -152,51 +150,22 @@ Blog
 <aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#rendering>Rendering</a>
-<ul>
-<li><a href=#propósito>Propósito</a></li>
-<li><a href=#tareas>Tareas</a></li>
-<li><a href=#entrega>Entrega</a></li>
-<li><a href=#protocolo-presentaciones>Protocolo presentaciones</a></li>
-</ul>
-</li>
+<li><a href=#workshop-2>Workshop 2</a></li>
 </ul>
 </nav>
 </aside>
 </header>
-<article class=markdown><h1 id=rendering>
-Rendering
-<a class=anchor href=#rendering>#</a>
+<article class=markdown><h1 id=workshop-2>
+Workshop 2
+<a class=anchor href=#workshop-2>#</a>
 </h1>
-<h2 id=propósito>
-Propósito
-<a class=anchor href=#prop%c3%b3sito>#</a>
-</h2>
-<p>Realizar indagación teórica-práctica de <a href=https://visualcomputing.github.io/Rendering>rendering</a>.</p>
-<h2 id=tareas>
-Tareas
-<a class=anchor href=#tareas>#</a>
-</h2>
-<ol>
-<li>Realizar una indagación teórica de algún <a href=https://en.wikipedia.org/wiki/Hidden-surface_determination>algoritmo de visibilidad</a> o algún método de <a href=https://en.wikipedia.org/wiki/Global_illumination#List_of_methods>iluminación global</a>.</li>
-<li>Implementar la visualización de un algoritmo de rasterización, e.g., <a href=https://en.wikipedia.org/wiki/Line_drawing_algorithm>líneas</a>, <a href=https://en.wikipedia.org/wiki/Midpoint_circle_algorithm>círculos</a>, <a href=https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/rasterization-practical-implementation>antialiasing</a>. <a href=https://visualcomputing.github.io/docs/rendering/rasterization/#shading>Acá</a> se pueden apreciar visualizaciones para la rasterización de un triángulo que pueden servir de modelo.</li>
-</ol>
-<h2 id=entrega>
-Entrega
-<a class=anchor href=#entrega>#</a>
-</h2>
-<p>Plazo para hacer <em>commit</em> del repositorio a github: 13/12/21 y 6/12/21 a las 24h, grupos 1 y 2 respectivamente.</p>
-<h2 id=protocolo-presentaciones>
-Protocolo presentaciones
-<a class=anchor href=#protocolo-presentaciones>#</a>
-</h2>
-<p>Exposiciones a ser realizadas la clase siguiente al <code>push</code> de 8m: 6m presentación: discusión del reporte subido a su página + 2m preguntas.</p>
+<p>Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global.</p>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/cf6301ad6f10f1cdf1b6da52a02f9eeb05522847 title="Last modified by nakednous | November 29, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/cfbb8c810e5aceb14efd7ff8e7d35821c9dbd342 title="Last modified by dmendivelso | December 13, 2021" target=_blank rel=noopener>
 <img src=/vc/svg/calendar.svg class=book-icon alt=Calendar>
-<span>November 29, 2021</span>
+<span>December 13, 2021</span>
 </a>
 </div>
 </div>
@@ -210,14 +179,7 @@ Protocolo presentaciones
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#rendering>Rendering</a>
-<ul>
-<li><a href=#propósito>Propósito</a></li>
-<li><a href=#tareas>Tareas</a></li>
-<li><a href=#entrega>Entrega</a></li>
-<li><a href=#protocolo-presentaciones>Protocolo presentaciones</a></li>
-</ul>
-</li>
+<li><a href=#workshop-2>Workshop 2</a></li>
 </ul>
 </nav>
 </div>
