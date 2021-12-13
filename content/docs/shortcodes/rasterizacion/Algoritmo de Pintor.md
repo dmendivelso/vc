@@ -34,6 +34,7 @@ Este algoritmo posee algunos problemas al momento de implementarse, algunos de e
 Esta situación se presenta en el momento en el que el algoritmo no es capaz de diferenciar y ordenar a un conjunto de polígonos, el ejemplo base que se plantea en el cual falla es:
 
 ![](https://www.researchgate.net/profile/Csaba-Toth-10/publication/228678743/figure/fig1/AS:393726032662531@1470883009610/Objects-may-have-cyclic-overlaps.png)
+
 Tomado de: https://www.researchgate.net/figure/Objects-may-have-cyclic-overlaps_fig1_228678743 
 
 En estos ejemplos se puede identificar fácilmente posibles escenarios en los que fallara el algoritmo.
@@ -43,6 +44,7 @@ En estos ejemplos se puede identificar fácilmente posibles escenarios en los qu
 Este escenario se presenta en el momento en el que los polígonos se intersectan entre ellos mismos, para este problema Martin Newell propone una solución, la cual es la división que intervengan en este caso (también aplica en el caso de la superposición cíclica).
 
 ![poligonos](https://github.com/dmendivelso/vc/blob/main/content/imgs/Perf_poligonos.png?raw=true)
+
 Tomado de: https://slideplayer.com/slide/4457863/ 
 
 3. Eficiencia:
