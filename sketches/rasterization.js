@@ -11,16 +11,16 @@ function setup() {
   createCanvas(621, 621);
   frameRate(5);
   move = 0;
-  r = 19;
+  r = 15;
   space = 20;
   decrease = true;
   resetSketch();
   var button = createButton("Change radius");
-  button.position(100, 50);
+  button.position(25, 25);
   button.mousePressed(resetSketch);
 
   var button2 = createButton("decrese size");
-  button2.position(25, 40);
+  button2.position(25, 75);
   button2.mousePressed(() => {
     space--;
     resetSketch(true);
