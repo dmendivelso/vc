@@ -2,7 +2,7 @@
 
 ## Algoritmo del Pintor
 
-![Demostracion] (https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.480p.vp9.webm)
+[![Watch the video](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/260px--Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.jpg)] (https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.480p.vp9.webm)
 
 ### Historia
 
@@ -34,7 +34,7 @@ Este algoritmo posee algunos problemas al momento de implementarse, algunos de e
 
 Esta situación se presenta en el momento en el que el algoritmo no es capaz de diferenciar y ordenar a un conjunto de polígonos, el ejemplo base que se plantea en el cual falla es:
 
-![clasica](https://www.researchgate.net/profile/Csaba-Toth-10/publication/228678743/figure/fig1/AS:393726032662531@1470883009610/Objects-may-have-cyclic-overlaps.png)
+![](https://www.researchgate.net/profile/Csaba-Toth-10/publication/228678743/figure/fig1/AS:393726032662531@1470883009610/Objects-may-have-cyclic-overlaps.png)
 
 En estos ejemplos se puede identificar fácilmente posibles escenarios en los que fallara el algoritmo.
 
@@ -42,7 +42,7 @@ En estos ejemplos se puede identificar fácilmente posibles escenarios en los qu
 
 Este escenario se presenta en el momento en el que los polígonos se intersectan entre ellos mismos, para este problema Martin Newell propone una solución, la cual es la división que intervengan en este caso (también aplica en el caso de la superposición cíclica).
 
-![poligonos](/content/imgs/Perf_poligonos.png)
+![poligonos](content/imgs/Perf_poligonos.png)
 
 3. Eficiencia:
 
