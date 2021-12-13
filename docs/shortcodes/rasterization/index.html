@@ -2,21 +2,21 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global. #  Algoritmo del Pintor #  ![Demostracion] (https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.480p.vp9.webm)
+<meta name=description content="Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global. #  Algoritmo del Pintor #  [] (https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.480p.vp9.webm)
 Historia #  El algoritmo del pintor se desempeña en la computación visual en 3D, en especial como algoritmo visual, este se caracteriza principalmente por su simplicidad en la aplicación. El algoritmo fue propuesto por primera vez por Martin Newell, Richard Newell y Tom Sancha en el año 1972 con el fin de solucionar el problema de “Hidden-surface determination” (Determinación de la Superficie Oculta).">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content>
-<meta property="og:description" content="Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global. #  Algoritmo del Pintor #  ![Demostracion] (https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.480p.vp9.webm)
+<meta property="og:description" content="Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global. #  Algoritmo del Pintor #  [] (https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.480p.vp9.webm)
 Historia #  El algoritmo del pintor se desempeña en la computación visual en 3D, en especial como algoritmo visual, este se caracteriza principalmente por su simplicidad en la aplicación. El algoritmo fue propuesto por primera vez por Martin Newell, Richard Newell y Tom Sancha en el año 1972 con el fin de solucionar el problema de “Hidden-surface determination” (Determinación de la Superficie Oculta).">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://dmendivelso.github.io/vc/docs/shortcodes/rasterization/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-12-12T22:50:39-05:00">
+<meta property="article:modified_time" content="2021-12-12T22:59:04-05:00">
 <title>Rasterization | Visual Computing</title>
 <link rel=manifest href=/vc/manifest.json>
 <link rel=icon href=/vc/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/vc/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/vc/flexsearch.min.js></script>
-<script defer src=/vc/en.search.min.446b5a9e70e9fa04da00d6ff2702682aba7f4a3e782804212060ee9a143855c8.js integrity="sha256-RGtannDp+gTaANb/JwJoKrp/Sj54KAQhIGDumhQ4Vcg=" crossorigin=anonymous></script>
+<script defer src=/vc/en.search.min.43c9ea3084e460c6b5ed913b5c8f2fbb1ab8f5038a03fa7f3c48ca523a9a03f2.js integrity="sha256-Q8nqMITkYMa17ZE7XI8vuxq49QOKA/p/PEjKUjqaA/I=" crossorigin=anonymous></script>
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -167,7 +167,7 @@ Realizar una indagación teórica de algún algoritmo de visibilidad o algún m�
 Algoritmo del Pintor
 <a class=anchor href=#algoritmo-del-pintor>#</a>
 </h2>
-<p>![Demostracion] (<a href=https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.480p.vp9.webm>https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.480p.vp9.webm</a>)</p>
+<p>[<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/260px--Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.jpg alt="Watch the video">] (<a href=https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.480p.vp9.webm>https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d3/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm/Genesis_fractal_landscape_software_%28Commodore_Amiga%29.webm.480p.vp9.webm</a>)</p>
 <h3 id=historia>
 Historia
 <a class=anchor href=#historia>#</a>
@@ -203,13 +203,13 @@ Problemas
 <li>Superposición cíclica:</li>
 </ol>
 <p>Esta situación se presenta en el momento en el que el algoritmo no es capaz de diferenciar y ordenar a un conjunto de polígonos, el ejemplo base que se plantea en el cual falla es:</p>
-<p><img src=https://www.researchgate.net/profile/Csaba-Toth-10/publication/228678743/figure/fig1/AS:393726032662531@1470883009610/Objects-may-have-cyclic-overlaps.png alt=clasica></p>
+<p><img src=https://www.researchgate.net/profile/Csaba-Toth-10/publication/228678743/figure/fig1/AS:393726032662531@1470883009610/Objects-may-have-cyclic-overlaps.png alt></p>
 <p>En estos ejemplos se puede identificar fácilmente posibles escenarios en los que fallara el algoritmo.</p>
 <ol start=2>
 <li>Perforación polígonos:</li>
 </ol>
 <p>Este escenario se presenta en el momento en el que los polígonos se intersectan entre ellos mismos, para este problema Martin Newell propone una solución, la cual es la división que intervengan en este caso (también aplica en el caso de la superposición cíclica).</p>
-<p><img src=/content/imgs/Perf_poligonos.png alt=poligonos></p>
+<p><img src=content/imgs/Perf_poligonos.png alt=poligonos></p>
 <ol start=3>
 <li>Eficiencia:</li>
 </ol>
@@ -245,7 +245,7 @@ Rasterization workshop
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/7c4cc8bd11fd5ecde308e29ba299c67ae7de0826 title="Last modified by Jonathan Andres Jimenez Trujillo | December 13, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/eab550d033272b0bb117fa79d22e3115d5a957ab title="Last modified by Jonathan Andres Jimenez Trujillo | December 13, 2021" target=_blank rel=noopener>
 <img src=/vc/svg/calendar.svg class=book-icon alt=Calendar>
 <span>December 13, 2021</span>
 </a>
