@@ -1,8 +1,6 @@
-# Realizar una indagación teórica de algún algoritmo de visibilidad o algún método de iluminación global.
-
 ## Algoritmo del Pintor
 
-![](https://github.com/dmendivelso/vc/blob/main/content/imgs/Genesis_fractal_landscape_software_(Commodore_Amiga).gif?raw=true)
+![](<https://github.com/dmendivelso/vc/blob/main/content/imgs/Genesis_fractal_landscape_software_(Commodore_Amiga).gif?raw=true>)
 
 ### Historia
 
@@ -47,18 +45,3 @@ Este escenario se presenta en el momento en el que los polígonos se intersectan
 3. Eficiencia:
 
 En caso de requerirse un algoritmo de visibilidad, el algoritmo del pintor no se presentaría como una opción eficiente, debido a que al momento de implementar el mismo, se debe tener en cuenta todos los polígonos que componen la escena, imagen o figura.
-
-
-# Rasterization workshop
-
-Buttons are styled links that can lead to local page or external link.
-
-{{< details title="Midpoint circle algorithm" open=false >}}
-
-```html
-{{</* p5-iframe sketch="/vc/sketches/rasterization.js" width="646" height="646" */>}}
-```
-
-{{< /details >}}
-
-{{< p5-iframe sketch="/vc/sketches/rasterization.js" width="646" height="646" >}}
