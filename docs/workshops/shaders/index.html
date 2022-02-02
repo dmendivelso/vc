@@ -2,16 +2,16 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Daniel Ricardo Mendivelso Velandia #  Mi nombre es Daniel, tengo 20 años, y me encuentro en 8vo semestre de Ingenieria de Sistemas. Me llama la atencion el desarrollo y la actualidad en hardware y software. Espero de este curso aprender sobre la parte visual de los computadores y como esta tiene influencia en la percepcion que se tiene hacia estos.
-Ilusion optica #  Los patrones de Moire son un patrón de interferencia que se forma cuando se superponen dos rejillas de líneas con un cierto ángulo, o cuando tales rejillas tienen tamaños ligeramente diferentes.">
+<meta name=description content="Shaders #  Objetivo #  Realizar una práctica en shaders al implementar por hardware un fotomosaico (acá un ejemplo) para imágenes y video.
+Experimentaciones sugeridas #   Implementar el fotomosaico por software y realizar una compartiva de su desempeño en relación con el obtenido por hardware. Implementar un webcrawler para la obtención de las imágenes. Experimentar con diferentes métricas (luma, avg, &mldr;) para el hash de las imágenes. Experimentar con la interfaz de usuario para el manejo de la imagen/video a procesar y la selección de las imágenes a emplear en la paleta.">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content>
-<meta property="og:description" content="Daniel Ricardo Mendivelso Velandia #  Mi nombre es Daniel, tengo 20 años, y me encuentro en 8vo semestre de Ingenieria de Sistemas. Me llama la atencion el desarrollo y la actualidad en hardware y software. Espero de este curso aprender sobre la parte visual de los computadores y como esta tiene influencia en la percepcion que se tiene hacia estos.
-Ilusion optica #  Los patrones de Moire son un patrón de interferencia que se forma cuando se superponen dos rejillas de líneas con un cierto ángulo, o cuando tales rejillas tienen tamaños ligeramente diferentes.">
+<meta property="og:description" content="Shaders #  Objetivo #  Realizar una práctica en shaders al implementar por hardware un fotomosaico (acá un ejemplo) para imágenes y video.
+Experimentaciones sugeridas #   Implementar el fotomosaico por software y realizar una compartiva de su desempeño en relación con el obtenido por hardware. Implementar un webcrawler para la obtención de las imágenes. Experimentar con diferentes métricas (luma, avg, &mldr;) para el hash de las imágenes. Experimentar con la interfaz de usuario para el manejo de la imagen/video a procesar y la selección de las imágenes a emplear en la paleta.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://dmendivelso.github.io/vc/docs/shortcodes/integrantes/DanielMendivelso/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-11-10T20:32:18-05:00">
-<title>Daniel Mendivelso | Visual Computing</title>
+<meta property="og:url" content="https://dmendivelso.github.io/vc/docs/workshops/shaders/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2022-01-28T10:46:55-05:00">
+<title>Shaders | Visual Computing</title>
 <link rel=manifest href=/vc/manifest.json>
 <link rel=icon href=/vc/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/vc/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
@@ -54,13 +54,13 @@ Ilusion optica #  Los patrones de Moire son un patrón de interferencia que se f
 <a href=https://dmendivelso.github.io/vc/docs/shortcodes/hints/>Hints</a>
 </li>
 <li>
-<input type=checkbox id=section-c7f999072490f0d34c2ca3149d93e29f class=toggle checked>
+<input type=checkbox id=section-c7f999072490f0d34c2ca3149d93e29f class=toggle>
 <label for=section-c7f999072490f0d34c2ca3149d93e29f class="flex justify-between">
 <a role=button>Integrantes</a>
 </label>
 <ul>
 <li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/integrantes/DanielMendivelso/ class=active>Daniel Mendivelso</a>
+<a href=https://dmendivelso.github.io/vc/docs/shortcodes/integrantes/DanielMendivelso/>Daniel Mendivelso</a>
 </li>
 <li>
 <a href=https://dmendivelso.github.io/vc/docs/shortcodes/integrantes/FelipeRiano/>Felipe Riano</a>
@@ -113,7 +113,7 @@ Ilusion optica #  Los patrones de Moire son un patrón de interferencia que se f
 </ul>
 </li>
 <li>
-<input type=checkbox id=section-191d4fa5967ce9fef74cb18feb81d534 class=toggle>
+<input type=checkbox id=section-191d4fa5967ce9fef74cb18feb81d534 class=toggle checked>
 <label for=section-191d4fa5967ce9fef74cb18feb81d534 class="flex justify-between">
 <a role=button>Workshops</a>
 </label>
@@ -125,7 +125,7 @@ Ilusion optica #  Los patrones de Moire son un patrón de interferencia que se f
 <a href=https://dmendivelso.github.io/vc/docs/workshops/rendering/>Rendering</a>
 </li>
 <li>
-<a href=https://dmendivelso.github.io/vc/docs/workshops/shaders/>Shaders</a>
+<a href=https://dmendivelso.github.io/vc/docs/workshops/shaders/ class=active>Shaders</a>
 </li>
 </ul>
 </li>
@@ -147,7 +147,7 @@ Blog
 <label for=menu-control>
 <img src=/vc/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>Daniel Mendivelso</strong>
+<strong>Shaders</strong>
 <label for=toc-control>
 <img src=/vc/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
@@ -155,59 +155,53 @@ Blog
 <aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#daniel-ricardo-mendivelso-velandia>Daniel Ricardo Mendivelso Velandia</a>
+<li><a href=#shaders>Shaders</a>
 <ul>
-<li><a href=#ilusion-optica>Ilusion optica</a></li>
+<li><a href=#objetivo>Objetivo</a></li>
+<li><a href=#experimentaciones-sugeridas>Experimentaciones sugeridas</a></li>
+<li><a href=#entrega>Entrega</a></li>
+<li><a href=#protocolo-presentaciones>Protocolo presentaciones</a></li>
 </ul>
 </li>
 </ul>
 </nav>
 </aside>
 </header>
-<article class=markdown><h1 id=daniel-ricardo-mendivelso-velandia>
-Daniel Ricardo Mendivelso Velandia
-<a class=anchor href=#daniel-ricardo-mendivelso-velandia>#</a>
+<article class=markdown><h1 id=shaders>
+Shaders
+<a class=anchor href=#shaders>#</a>
 </h1>
-<p>Mi nombre es Daniel, tengo 20 años, y me encuentro en 8vo semestre de Ingenieria de Sistemas. Me llama la atencion el desarrollo y la actualidad en hardware y software. Espero de este curso aprender sobre la parte visual de los computadores y como esta tiene influencia en la percepcion que se tiene hacia estos.</p>
-<h2 id=ilusion-optica>
-Ilusion optica
-<a class=anchor href=#ilusion-optica>#</a>
+<h2 id=objetivo>
+Objetivo
+<a class=anchor href=#objetivo>#</a>
 </h2>
-<p>Los patrones de Moire son un patrón de interferencia que se forma cuando se superponen dos rejillas de líneas con un cierto ángulo, o cuando tales rejillas tienen tamaños ligeramente diferentes. El término proviene del francés moiré, un tipo particular de textil en seda y que posee una apariencia ondeante o fluctuante, gracias a los patrones de interferencia formados por la estructura misma del tejido.</p>
-<details><summary>Patrones de Moire</summary>
-<div class=markdown-inner>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>{{&lt; <span style=color:#f92672>p5-iframe</span> <span style=color:#a6e22e>sketch</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/vc/sketches/ilusion_DanielMendivelso.js&#34;</span> <span style=color:#a6e22e>width</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;575&#34;</span> <span style=color:#a6e22e>height</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;575&#34;</span> &gt;}}
-</code></pre></div>
-</div>
-</details>
-<iframe id=ilusion_DanielMendivelso style=width:575px;height:575px srcdoc="
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js></script>
-            <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js></script>
-            
-            
-            
-            
-            
-            <script src=/vc/sketches/ilusion_DanielMendivelso.js></script>
-          </head>
-          <body>
-          </body>
-        </html>
-      "></iframe>
-<p>Bibliografia</p>
-<ul>
-<li><a href=http://i3campus.co/CONTENIDOS/wikipedia/content/a/patr%25c3%25b3n_de_moir%25c3%25a9.html>http://i3campus.co/CONTENIDOS/wikipedia/content/a/patr%25c3%25b3n_de_moir%25c3%25a9.html</a></li>
-<li><a href=https://michaelbach.de/ot/lum-moire1/index.html>https://michaelbach.de/ot/lum-moire1/index.html</a></li>
-</ul>
+<p>Realizar una práctica en <a href=https://en.wikipedia.org/wiki/Shader>shaders</a> al implementar por hardware un <a href=https://en.wikipedia.org/wiki/Photographic_mosaic>fotomosaico</a> (<a href=https://visualcomputing.github.io/docs/shaders/photomosaic/>acá</a> un ejemplo) para imágenes y video.</p>
+<h2 id=experimentaciones-sugeridas>
+Experimentaciones sugeridas
+<a class=anchor href=#experimentaciones-sugeridas>#</a>
+</h2>
+<ol>
+<li>Implementar el fotomosaico por software y realizar una compartiva de su desempeño en relación con el obtenido por hardware.</li>
+<li>Implementar un <a href=https://en.wikipedia.org/wiki/Web_crawler>webcrawler</a> para la obtención de las imágenes.</li>
+<li>Experimentar con diferentes métricas (luma, avg, &mldr;) para el hash de las imágenes.</li>
+<li>Experimentar con la interfaz de usuario para el manejo de la imagen/video a procesar y la selección de las imágenes a emplear en la paleta.</li>
+</ol>
+<h2 id=entrega>
+Entrega
+<a class=anchor href=#entrega>#</a>
+</h2>
+<p>Plazo para hacer <em>commit</em> del repositorio a github: 6/02/22 a las 24h.</p>
+<h2 id=protocolo-presentaciones>
+Protocolo presentaciones
+<a class=anchor href=#protocolo-presentaciones>#</a>
+</h2>
+<p>Exposiciones a ser realizadas la clase siguiente al <code>push</code> de 8m: 6m presentación: discusión del reporte subido a su página + 2m preguntas.</p>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/8c15d4b016a87a23023dd5be7afb36f2ade19547 title="Last modified by dmendivelso | November 11, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/20497ffa2c5842dcf8bbf23f09eeaeabc70886df title="Last modified by nakednous | January 28, 2022" target=_blank rel=noopener>
 <img src=/vc/svg/calendar.svg class=book-icon alt=Calendar>
-<span>November 11, 2021</span>
+<span>January 28, 2022</span>
 </a>
 </div>
 </div>
@@ -221,9 +215,12 @@ Ilusion optica
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#daniel-ricardo-mendivelso-velandia>Daniel Ricardo Mendivelso Velandia</a>
+<li><a href=#shaders>Shaders</a>
 <ul>
-<li><a href=#ilusion-optica>Ilusion optica</a></li>
+<li><a href=#objetivo>Objetivo</a></li>
+<li><a href=#experimentaciones-sugeridas>Experimentaciones sugeridas</a></li>
+<li><a href=#entrega>Entrega</a></li>
+<li><a href=#protocolo-presentaciones>Protocolo presentaciones</a></li>
 </ul>
 </li>
 </ul>
