@@ -13,10 +13,12 @@ let p;
 
 let luma;
 let rgb;
+let myFont;
 
 const SAMPLE_RES = 100;
 
 function preload() {
+  myFont = loadFont('/vc/sketches/Montserrat-Black.otf');
   image_src = loadImage("/vc/sketches/bisho.jpg");
   video_src = createVideo(["/vc/sketches/maradona.mp4"]);
   video_src.hide(); // by default video shows up in separate dom
@@ -36,6 +38,10 @@ function setup() {
   // shaders require WEBGL mode to work
   createCanvas(650, 650, WEBGL);
   colorMode(RGB, 1);
+  frameRate();
+  textFont(myFont);
+  textSize(30);
+  textAlign(CENTER);
   imageCells = createQuadrille(p);
   textureMode(NORMAL);
   noStroke();
@@ -144,6 +150,8 @@ function draw() {
     true
   }
   );
+  fill(0)
+  text(floor(frameRate()), -275,-275);
 }
 
 function windowResized() {
