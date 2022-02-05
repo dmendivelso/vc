@@ -36,8 +36,6 @@ function setup() {
   // shaders require WEBGL mode to work
   createCanvas(650, 650, WEBGL);
   colorMode(RGB, 1);
-  textSize(30);
-  textAlign(CENTER);
   imageCells = createQuadrille(p);
   textureMode(NORMAL);
   noStroke();
