@@ -13,21 +13,19 @@ let p;
 
 let luma;
 let rgb;
-let myFont;
 
 const SAMPLE_RES = 100;
 
 function preload() {
-  myFont = loadFont('/vc/sketches/Montserrat-Black.otf');
   image_src = loadImage("/vc/sketches/bisho.jpg");
   video_src = createVideo(["/vc/sketches/maradona.mp4"]);
   video_src.hide(); // by default video shows up in separate dom
   mosaic = readShader("/vc/sketches/shaders/photomosaic.frag");
   p = [];
   for (let i = 1; i <= 40; i++) {
-    if(i.toString().length == 1){
+    if (i.toString().length == 1) {
       p.push(loadImage(`/vc/sketches/shaders/paintings/00000${i}.jpg`));
-    }else{
+    } else {
       p.push(loadImage(`/vc/sketches/shaders/paintings/0000${i}.jpg`));
     }
     //p.push(loadImage(`/vc/sketches/shaders/paintings_1/p${i}.jpg`));
@@ -38,15 +36,10 @@ function setup() {
   // shaders require WEBGL mode to work
   createCanvas(650, 650, WEBGL);
   colorMode(RGB, 1);
-  frameRate();
-  textFont(myFont);
-  textSize(30);
-  textAlign(CENTER);
   imageCells = createQuadrille(p);
   textureMode(NORMAL);
   noStroke();
   shader(mosaic);
-  frameRate(30);
   cam = createCapture(VIDEO);
   cam.size(500, 400);
   cam.hide();
@@ -58,8 +51,7 @@ function setup() {
   sel.changed(() => {
     mosaic.setUniform("debug", sel.value() === "keys");
     mosaic.setUniform("color_on", false);
-  }
-  );
+  });
 
   video_on = createSelect();
   video_on.position(10, 100);
@@ -68,36 +60,29 @@ function setup() {
   video_on.option("camera");
   video_on.selected("image");
   video_on.changed(() => {
-    mosaic.setUniform("source", video_on.value() === "image" ? image_src : (video_on.value() === "video" ? video_src : cam));
+    mosaic.setUniform(
+      "source",
+      video_on.value() === "image"
+        ? image_src
+        : video_on.value() === "video"
+        ? video_src
+        : cam
+    );
     if (video_on.value() === "video") {
       video_src.loop();
     } else {
       video_src.pause();
     }
-  }
-  );
-
-  /*video_on = createCheckbox("video", false);
-   video_on.style("color", "magenta");
-   video_on.changed(() => {
-   if (video_on.checked()) {
-   mosaic.setUniform("source", cam);
-   //video_src.loop();
-   } else {
-   mosaic.setUniform("source", image_src);
-   video_src.pause();
-   }
-   });*/
+  });
 
   video_on.position(10, 80);
   mosaic.setUniform("source", image_src);
-  resolution = createSlider(1, 500, SAMPLE_RES, 5);
+  resolution = createSlider(10, 300, SAMPLE_RES, 5);
   resolution.position(10, 100);
   resolution.style("width", "80px");
   resolution.input(() => {
     mosaic.setUniform("resolution", resolution.value());
-  }
-  );
+  });
   mosaic.setUniform("resolution", resolution.value());
   pg = createGraphics(SAMPLE_RES * imageCells.width, SAMPLE_RES);
   mosaic.setUniform("cols", imageCells.width);
@@ -109,33 +94,23 @@ function sample() {
     pg = createGraphics(SAMPLE_RES * imageCells.width, SAMPLE_RES);
     mosaic.setUniform("cols", imageCells.width);
   }
-  imageCells.sort( {
-  ascending:
-  true, cellLength:
-  SAMPLE_RES, mode:
-    'LUMA'
-  }
-  );
+  imageCells.sort({
+    ascending: true,
+    cellLength: SAMPLE_RES,
+    mode: "LUMA",
+  });
 
-  luma = imageCells.saveLuma( {
-  cellLength:
-    SAMPLE_RES
-  }
-  );
-  rgb = imageCells.saveRGB( {
-  cellLength:
-    SAMPLE_RES
-  }
-  );
+  luma = imageCells.saveLuma({
+    cellLength: SAMPLE_RES,
+  });
+  rgb = imageCells.saveRGB({
+    cellLength: SAMPLE_RES,
+  });
   drawQuadrille(imageCells, {
-  graphics:
-    pg,
-    cellLength:
-    SAMPLE_RES,
-    outlineWeight:
-    0,
-  }
-  );
+    graphics: pg,
+    cellLength: SAMPLE_RES,
+    outlineWeight: 0,
+  });
   mosaic.setUniform("palette", pg);
   mosaic.setUniform("lumas", luma);
   mosaic.setUniform("red_palette", rgb.r);
@@ -143,15 +118,17 @@ function sample() {
   mosaic.setUniform("blue_palette", rgb.b);
 }
 
-
 function draw() {
-  cover( {
-  texture:
-    true
-  }
-  );
-  fill(0)
-  text(floor(frameRate()), -275,-275);
+  cover({
+    texture: true,
+  });
+  let div = createDiv(floor(frameRate()));
+  div.style("font-size", "16px");
+  div.style("background-color", "white");
+  div.style("font-family", "Arial");
+  div.style("font-size", "30px");
+  div.style("font-weight", "bold");
+  div.position(20, 20);
 }
 
 function windowResized() {

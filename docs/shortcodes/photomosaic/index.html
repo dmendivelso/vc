@@ -2,19 +2,20 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Photomosaic #  El algoritmo del punto medio del circulo es un algoritmo usado para determinar los puntos necesarios para rasterizar un circulo. Usamos el algoritmo del punto medio para calcular para calcular todos los puntos del perimetro del circulo en un primer octante y luego imprimimos el reflejo de estos puntos en los 7 octantes restantes para completar el circulo. Esto funciona debido a que el circulo es simetrico en cualquier direccion.">
+<meta name=description content="Workshop 3 #  Realizar una práctica en shaders al implementar por hardware un fotomosaico para imágenes y video.
+Resultados #  ">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content>
-<meta property="og:description" content="Photomosaic #  El algoritmo del punto medio del circulo es un algoritmo usado para determinar los puntos necesarios para rasterizar un circulo. Usamos el algoritmo del punto medio para calcular para calcular todos los puntos del perimetro del circulo en un primer octante y luego imprimimos el reflejo de estos puntos en los 7 octantes restantes para completar el circulo. Esto funciona debido a que el circulo es simetrico en cualquier direccion.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-05T16:02:42-05:00">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/">
 <title>Photomosaic | Visual Computing</title>
 <link rel=manifest href=/vc/manifest.json>
 <link rel=icon href=/vc/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/vc/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/vc/flexsearch.min.js></script>
-<script defer src=/vc/en.search.min.43e20170c6c780ae1f4ac080c59f073bec036d3955049fc4c24ffeba9badcef5.js integrity="sha256-Q+IBcMbHgK4fSsCAxZ8HO+wDbTlVBJ/Ewk/+uputzvU=" crossorigin=anonymous></script>
+<script defer src=/vc/en.search.min.292fb3623a0b7d2d167bb80580f144606ceaa1aee5198e48a3837f0cbd5424e6.js integrity="sha256-KS+zYjoLfS0We7gFgPFEYGzqoa7lGY5Io4N/DL1UJOY=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/index.xml title="Visual Computing">
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -37,21 +38,6 @@
 <span>Shortcodes</span>
 <ul>
 <li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/buttons/>Buttons</a>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/columns/>Columns</a>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/details/>Details</a>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/expand/>Expand</a>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/hints/>Hints</a>
-</li>
-<li>
 <input type=checkbox id=section-c7f999072490f0d34c2ca3149d93e29f class=toggle>
 <label for=section-c7f999072490f0d34c2ca3149d93e29f class="flex justify-between">
 <a role=button>Integrantes</a>
@@ -72,27 +58,18 @@
 </ul>
 </li>
 <li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/katex/>Katex</a>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/mermaid/>Mermaid</a>
-</li>
-<li>
-<input type=checkbox id=section-ec67a64aba70b9df3d2a9acd6c92e3bc class=toggle>
-<label for=section-ec67a64aba70b9df3d2a9acd6c92e3bc class="flex justify-between">
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/p5/>P5</a>
+<input type=checkbox id=section-b7290972bc36e16ab8d0fb9ef0f7309e class=toggle checked>
+<label for=section-b7290972bc36e16ab8d0fb9ef0f7309e class="flex justify-between">
+<a href=https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/ class=active>Photomosaic</a>
 </label>
 <ul>
 <li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/p5/div/>Div</a>
+<a href=https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/photomosaic_hardware/>Photomosaic Hardware</a>
 </li>
 <li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/p5/iframe/>Iframe</a>
+<a href=https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/photomosaic_software/>Photomosaic Software</a>
 </li>
 </ul>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/ class=active>Photomosaic</a>
 </li>
 <li>
 <input type=checkbox id=section-36e68ea61276d314d189c2f323841b31 class=toggle>
@@ -107,9 +84,6 @@
 <a href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/Midpoint-circle-algorithm/>Midpoint Circle Algorithm</a>
 </li>
 </ul>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/tabs/>Tabs</a>
 </li>
 </ul>
 </li>
@@ -156,65 +130,28 @@ Blog
 <aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#photomosaic>Photomosaic</a></li>
-<li><a href=#software>Software</a></li>
+<li><a href=#workshop-3>Workshop 3</a>
+<ul>
+<li><a href=#resultados>Resultados</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </aside>
 </header>
-<article class=markdown><h1 id=photomosaic>
-Photomosaic
-<a class=anchor href=#photomosaic>#</a>
+<article class=markdown><h1 id=workshop-3>
+Workshop 3
+<a class=anchor href=#workshop-3>#</a>
 </h1>
-<p>El algoritmo del punto medio del circulo es un algoritmo usado para determinar los puntos necesarios para rasterizar un circulo. Usamos el algoritmo del punto medio para calcular para calcular todos los puntos del perimetro del circulo en un primer octante y luego imprimimos el reflejo de estos puntos en los 7 octantes restantes para completar el circulo. Esto funciona debido a que el circulo es simetrico en cualquier direccion.</p>
-<details><summary>Midpoint circle algorithm</summary>
-<div class=markdown-inner>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>{{&lt; <span style=color:#f92672>p5-iframe</span> <span style=color:#a6e22e>sketch</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/vc/sketches/photomosaic.js&#34;</span> <span style=color:#a6e22e>width</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;646&#34;</span> <span style=color:#a6e22e>height</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;646&#34;</span> &gt;}}
-</code></pre></div>
-</div>
-</details>
-<iframe id=photomosaic style=width:646px;height:646px srcdoc="
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js></script>
-            <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js></script>
-             <script src=/vc/sketches/libraries/p5.shaderbox.js></script> 
-             <script src=/vc/sketches/libraries/p5.quadrille.js></script> 
-            
-            
-            
-            <script src=/vc/sketches/photomosaic.js></script>
-          </head>
-          <body>
-          </body>
-        </html>
-      "></iframe>
-<h1 id=software>
-Software
-<a class=anchor href=#software>#</a>
-</h1>
-<iframe id=photomosaicSoftware style=width:650px;height:440px srcdoc="
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js></script>
-            <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js></script>
-            
-            
-            
-            
-            
-            <script src=/vc/sketches/photomosaicSoftware.js></script>
-          </head>
-          <body>
-          </body>
-        </html>
-      "></iframe>
+<p>Realizar una práctica en shaders al implementar por hardware un fotomosaico para imágenes y video.</p>
+<h2 id=resultados>
+Resultados
+<a class=anchor href=#resultados>#</a>
+</h2>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/bc51db1e3643641cc9823dbadf2eb85df642587c title="Last modified by Juan Pablo Carmona | February 5, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/f01837b7cf16baff2391153492e694dbd8c9d571 title="Last modified by dmendivelso | February 5, 2022" target=_blank rel=noopener>
 <img src=/vc/svg/calendar.svg class=book-icon alt=Calendar>
 <span>February 5, 2022</span>
 </a>
@@ -230,8 +167,11 @@ Software
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#photomosaic>Photomosaic</a></li>
-<li><a href=#software>Software</a></li>
+<li><a href=#workshop-3>Workshop 3</a>
+<ul>
+<li><a href=#resultados>Resultados</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </div>

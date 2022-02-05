@@ -66,7 +66,7 @@ void main() {
     }*/
 
     bool complete = false;
-    for(float j = 0.05; j <= 0.5; j += 0.05){
+    for(float j = 0.02; j <= 0.5; j += 0.02){
       for(int i = 0 ; i < num_images; i ++)
       {
         if((red_palette[i]/255.0> (key.r - j) && red_palette[i]/255.0 < (key.r + j)) && (green_palette[i]/255.0> (key.g - j) && green_palette[i]/255.0 < (key.g + j)) && (blue_palette[i]/255.0> (key.b - j) && blue_palette[i]/255.0 < (key.b + j))){
