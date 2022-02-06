@@ -2,19 +2,21 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Fotomosaico por software #  El fotomosaico es una imagen, retrato o fotografía que se divide por figuras geométricas, generalmente por cuadrados o rectángulos del mismo tamaño, esto con el fin de remplazar las mismas por otros retratos, fotografías o imágenes que concuerden con los colores promedio que encierran las figuras geométricas de la imagen original, logrando que al visualizar la imagen de un punto lejano se logre ver como la original , pero que al ver de un punto cercano o al hacer zoom se pueda percibir que se compone de otras imágenes.">
+<meta name=description content="Fotomosaico por software #  Explicación fotomosaico por software #  La implementación del fotomosaico se puede realizar por medio de software, es decir, la construcción de un algoritmo que se encargue de convertir la imagen original en un mosaico de otras.
+Dicho algoritmo, se inicia con una división de la imagen original en cuadrados del mismo tamaño, esto para poder calcular el color promedio en formato RGB que esta presente en esa área de la imagen original, este conjunto de colores promedios son almacenados en un vector.">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content>
-<meta property="og:description" content="Fotomosaico por software #  El fotomosaico es una imagen, retrato o fotografía que se divide por figuras geométricas, generalmente por cuadrados o rectángulos del mismo tamaño, esto con el fin de remplazar las mismas por otros retratos, fotografías o imágenes que concuerden con los colores promedio que encierran las figuras geométricas de la imagen original, logrando que al visualizar la imagen de un punto lejano se logre ver como la original , pero que al ver de un punto cercano o al hacer zoom se pueda percibir que se compone de otras imágenes.">
+<meta property="og:description" content="Fotomosaico por software #  Explicación fotomosaico por software #  La implementación del fotomosaico se puede realizar por medio de software, es decir, la construcción de un algoritmo que se encargue de convertir la imagen original en un mosaico de otras.
+Dicho algoritmo, se inicia con una división de la imagen original en cuadrados del mismo tamaño, esto para poder calcular el color promedio en formato RGB que esta presente en esa área de la imagen original, este conjunto de colores promedios son almacenados en un vector.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/photomosaic_software/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-05T21:44:29-05:00">
+<meta property="article:modified_time" content="2022-02-06T10:56:57-05:00">
 <title>Photomosaic Software | Visual Computing</title>
 <link rel=manifest href=/vc/manifest.json>
 <link rel=icon href=/vc/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/vc/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/vc/flexsearch.min.js></script>
-<script defer src=/vc/en.search.min.325095706a71e48b63197b18449cc5128c54e9c62c27e917368fcaa5aac36ab9.js integrity="sha256-MlCVcGpx5ItjGXsYRJzFEoxU6cYsJ+kXNo/KparDark=" crossorigin=anonymous></script>
+<script defer src=/vc/en.search.min.2b179ae501047c341adb68971ee23e9ed420c23c8120a435a74da82251204a86.js integrity="sha256-Kxea5QEEfDQa22iXHuI+ntQgwjyBIKQ1p02oIlEgSoY=" crossorigin=anonymous></script>
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -132,7 +134,6 @@ Blog
 <li><a href=#fotomosaico-por-software>Fotomosaico por software</a>
 <ul>
 <li><a href=#explicación-fotomosaico-por-software>Explicación fotomosaico por software</a></li>
-<li><a href=#comparación-fotomosaico-por-software-y-por-hardware>Comparación Fotomosaico por Software y por Hardware</a></li>
 </ul>
 </li>
 </ul>
@@ -143,12 +144,6 @@ Blog
 Fotomosaico por software
 <a class=anchor href=#fotomosaico-por-software>#</a>
 </h1>
-<p>El fotomosaico es una imagen, retrato o fotografía que se divide por figuras geométricas, generalmente
-por cuadrados o rectángulos del mismo tamaño, esto con el fin de remplazar las mismas
-por otros retratos, fotografías o imágenes que concuerden con los colores promedio que encierran las
-figuras geométricas de la imagen original, logrando que al visualizar la
-imagen de un punto lejano se logre ver como la original , pero que al ver de un punto cercano o al
-hacer zoom se pueda percibir que se compone de otras imágenes.</p>
 <h2 id=explicación-fotomosaico-por-software>
 Explicación fotomosaico por software
 <a class=anchor href=#explicaci%c3%b3n-fotomosaico-por-software>#</a>
@@ -173,15 +168,10 @@ Explicación fotomosaico por software
         </html>
       "></iframe>
 <p>La implementación anterior, fue realizada para una fotografía y un video con un conjunto de 23 imágenes, adicionalmente se implemento un botón que se puede desplazar para poder visualizar la diferencia de resolución que se va adquiriendo a medida de que se usan mas imágenes en áreas mas pequeñas.</p>
-<h2 id=comparación-fotomosaico-por-software-y-por-hardware>
-Comparación Fotomosaico por Software y por Hardware
-<a class=anchor href=#comparaci%c3%b3n-fotomosaico-por-software-y-por-hardware>#</a>
-</h2>
-<p>La implementación del fotomosaico por Hardware y Software son bastante agiles. Sin embargo, viendo el comportamiento de los dos se puede denotar que el fotomosaico implementado por medio del hardware es notoriamente mas fluido que el implementado por medio de software. También cabe resaltar que si bien hoy la capacidad de computación ha mejorado, la velocidad de procesamiento de imágenes por medio de software se ve limitada y que el desempeño de los procesadores dedicados se encuentra muy por encima y aporta mucho al momento de procesar contenido gráfico.</p>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/8b52e2ea7fde65dc4971bf77295c1ef3a8ba2268 title="Last modified by felipe1297 | February 6, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/d80ec9c695c7ae6f1fa4775bbf160574f7bc3414 title="Last modified by felipe1297 | February 6, 2022" target=_blank rel=noopener>
 <img src=/vc/svg/calendar.svg class=book-icon alt=Calendar>
 <span>February 6, 2022</span>
 </a>
@@ -200,7 +190,6 @@ Comparación Fotomosaico por Software y por Hardware
 <li><a href=#fotomosaico-por-software>Fotomosaico por software</a>
 <ul>
 <li><a href=#explicación-fotomosaico-por-software>Explicación fotomosaico por software</a></li>
-<li><a href=#comparación-fotomosaico-por-software-y-por-hardware>Comparación Fotomosaico por Software y por Hardware</a></li>
 </ul>
 </li>
 </ul>
