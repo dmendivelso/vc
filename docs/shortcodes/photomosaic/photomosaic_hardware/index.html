@@ -2,21 +2,21 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Fotomosaico por hardware #  Explicación fotomosaico por hardware
-           &#34;  ">
+<meta name=description content="Fotomosaico por hardware #  Explicación fotomosaico por hardware #  La implementación del fotomosaico se puede realizar a través de hardware, es decir, la construcción de un algoritmo que se encargue de convertir la imagen original en un mosaico de otras.
+En este ejercicio por hardware hacemos uso de varias fuentes para aplicar el fotomosaico como lo es la imagen de Cristiano Ronaldo, un video montado dentro del repositorio y tambien se puede hacer uso del video que se obtiene desde la camara del computador.">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content>
-<meta property="og:description" content="Fotomosaico por hardware #  Explicación fotomosaico por hardware
-           &#34;  ">
+<meta property="og:description" content="Fotomosaico por hardware #  Explicación fotomosaico por hardware #  La implementación del fotomosaico se puede realizar a través de hardware, es decir, la construcción de un algoritmo que se encargue de convertir la imagen original en un mosaico de otras.
+En este ejercicio por hardware hacemos uso de varias fuentes para aplicar el fotomosaico como lo es la imagen de Cristiano Ronaldo, un video montado dentro del repositorio y tambien se puede hacer uso del video que se obtiene desde la camara del computador.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/photomosaic_hardware/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-05T17:26:35-05:00">
+<meta property="article:modified_time" content="2022-02-06T22:35:48-05:00">
 <title>Photomosaic Hardware | Visual Computing</title>
 <link rel=manifest href=/vc/manifest.json>
 <link rel=icon href=/vc/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/vc/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/vc/flexsearch.min.js></script>
-<script defer src=/vc/en.search.min.2b179ae501047c341adb68971ee23e9ed420c23c8120a435a74da82251204a86.js integrity="sha256-Kxea5QEEfDQa22iXHuI+ntQgwjyBIKQ1p02oIlEgSoY=" crossorigin=anonymous></script>
+<script defer src=/vc/en.search.min.46370feb94fe0ad3a32ced6c0966397a0a720b9b1f022c6ee55ea3f05241554b.js integrity="sha256-RjcP65T+CtOjLO1sCWY5egpyC5sfAixu5V6j8FJBVUs=" crossorigin=anonymous></script>
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -131,20 +131,26 @@ Blog
 <aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li>
+<li><a href=#fotomosaico-por-hardware>Fotomosaico por hardware</a>
 <ul>
-<li><a href=#fotomosaico-por-hardware>Fotomosaico por hardware</a></li>
+<li><a href=#explicación-fotomosaico-por-hardware>Explicación fotomosaico por hardware</a></li>
 </ul>
 </li>
 </ul>
 </nav>
 </aside>
 </header>
-<article class=markdown><h2 id=fotomosaico-por-hardware>
+<article class=markdown><h1 id=fotomosaico-por-hardware>
 Fotomosaico por hardware
 <a class=anchor href=#fotomosaico-por-hardware>#</a>
+</h1>
+<h2 id=explicación-fotomosaico-por-hardware>
+Explicación fotomosaico por hardware
+<a class=anchor href=#explicaci%c3%b3n-fotomosaico-por-hardware>#</a>
 </h2>
-<p>Explicación fotomosaico por hardware</p>
+<p>La implementación del fotomosaico se puede realizar a través de hardware, es decir, la construcción de un algoritmo que se encargue de convertir la imagen original en un mosaico de otras.</p>
+<p>En este ejercicio por hardware hacemos uso de varias fuentes para aplicar el fotomosaico como lo es la imagen de Cristiano Ronaldo, un video montado dentro del repositorio y tambien se puede hacer uso del video que se obtiene desde la camara del computador.</p>
+<p>En la funcion <code>preload</code> definimos el fragmento a usar demoninado <code>photomosaic.frag</code>, a partir de ahi al mosaico final vamos a definir ciertos parametros que van a ser obtenidos al momento de recorrer la imagen, aqui se comparan los texeles del color promedio que posee cada pixel de la imagen o video original.</p>
 <iframe id=photomosaic style=width:675px;height:675px srcdoc="
         <!DOCTYPE html>
         <html>
@@ -162,12 +168,13 @@ Fotomosaico por hardware
           </body>
         </html>
       "></iframe>
+<p>Al igual tanto al resultado como previsualización en ambos ejercicios (hardware/software) se le agrego una estadistíca de frames por segundo para comparar los ejercicios.</p>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/f01837b7cf16baff2391153492e694dbd8c9d571 title="Last modified by dmendivelso | February 5, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/f91641833adf05d8a782271e3afd6c40c983b4cd title="Last modified by Jonathan Andres Jimenez Trujillo | February 7, 2022" target=_blank rel=noopener>
 <img src=/vc/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 5, 2022</span>
+<span>February 7, 2022</span>
 </a>
 </div>
 </div>
@@ -181,9 +188,9 @@ Fotomosaico por hardware
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li>
+<li><a href=#fotomosaico-por-hardware>Fotomosaico por hardware</a>
 <ul>
-<li><a href=#fotomosaico-por-hardware>Fotomosaico por hardware</a></li>
+<li><a href=#explicación-fotomosaico-por-hardware>Explicación fotomosaico por hardware</a></li>
 </ul>
 </li>
 </ul>
