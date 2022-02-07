@@ -12,4 +12,4 @@ Los colores promedio de la imagen original son comparados con la imagen devuelta
 
 {{< p5-iframe sketch="/vc/sketches/photomosaic.js" lib1="/vc/sketches/libraries/p5.shaderbox.js" lib2="/vc/sketches/libraries/p5.quadrille.js" width="675" height="675" >}}
 
-Al igual tanto al resultado como previsualización en ambos ejercicios (hardware/software) se le agrego una estadistíca de frames por segundo para comparar los ejercicios. 
+Al igual tanto al resultado como previsualización en ambos ejercicios (hardware/software) se le agrego una estadistíca de frames por segundo para comparar los ejercicios.
