@@ -1,167 +1,15 @@
-<!doctype html><html lang=en dir=ltr>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Midpoint circle algorithm #  El algoritmo del punto medio del circulo es un algoritmo usado para determinar los puntos necesarios para rasterizar un circulo. Usamos el algoritmo del punto medio para calcular para calcular todos los puntos del perimetro del circulo en un primer octante y luego imprimimos el reflejo de estos puntos en los 7 octantes restantes para completar el circulo. Esto funciona debido a que el circulo es simetrico en cualquier direccion.">
-<meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content>
-<meta property="og:description" content="Midpoint circle algorithm #  El algoritmo del punto medio del circulo es un algoritmo usado para determinar los puntos necesarios para rasterizar un circulo. Usamos el algoritmo del punto medio para calcular para calcular todos los puntos del perimetro del circulo en un primer octante y luego imprimimos el reflejo de estos puntos en los 7 octantes restantes para completar el circulo. Esto funciona debido a que el circulo es simetrico en cualquier direccion.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/Midpoint-circle-algorithm/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-12-13T09:42:24-05:00">
-<title>Midpoint Circle Algorithm | Visual Computing</title>
-<link rel=manifest href=/vc/manifest.json>
-<link rel=icon href=/vc/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/vc/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
-<script defer src=/vc/flexsearch.min.js></script>
-<script defer src=/vc/en.search.min.46ce4c3ec47c08dd465511247d00e792f1ea4a0be0d6e1bc9fc2c4f3540831e0.js integrity="sha256-Rs5MPsR8CN1GVREkfQDnkvHqSgvg1uG8n8LE81QIMeA=" crossorigin=anonymous></script>
-</head>
-<body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a class="flex align-center" href=/vc/><span>Visual Computing</span>
-</a>
-</h2>
-<div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
-</div>
-<ul>
-<li class=book-section-flat>
-<span>Shortcodes</span>
-<ul>
-<li>
-<input type=checkbox id=section-c7f999072490f0d34c2ca3149d93e29f class=toggle>
-<label for=section-c7f999072490f0d34c2ca3149d93e29f class="flex justify-between">
-<a role=button>Integrantes</a>
-</label>
-<ul>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/integrantes/DanielMendivelso/>Daniel Mendivelso</a>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/integrantes/FelipeRiano/>Felipe Riano</a>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/integrantes/JonathanJimenez/>Jonathan Jimenez</a>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/integrantes/JuanCarmona/>Juan Carmona</a>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-b7290972bc36e16ab8d0fb9ef0f7309e class=toggle>
-<label for=section-b7290972bc36e16ab8d0fb9ef0f7309e class="flex justify-between">
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/>Photomosaic</a>
-</label>
-<ul>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/photomasaic_extra/>Photomasaic Extra</a>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/photomosaic_hardware/>Photomosaic Hardware</a>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/photomosaic_software/>Photomosaic Software</a>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-36e68ea61276d314d189c2f323841b31 class=toggle checked>
-<label for=section-36e68ea61276d314d189c2f323841b31 class="flex justify-between">
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/>Rasterizacion</a>
-</label>
-<ul>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/Algoritmo-de-Pintor/>Algoritmo De Pintor</a>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/Midpoint-circle-algorithm/ class=active>Midpoint Circle Algorithm</a>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-191d4fa5967ce9fef74cb18feb81d534 class=toggle>
-<label for=section-191d4fa5967ce9fef74cb18feb81d534 class="flex justify-between">
-<a role=button>Workshops</a>
-</label>
-<ul>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/workshops/optical_illusions/>Optical Illusions</a>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/workshops/rendering/>Rendering</a>
-</li>
-<li>
-<a href=https://dmendivelso.github.io/vc/docs/workshops/shaders/>Shaders</a>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>
-<a href=/vc/posts/>
-Blog
-</a>
-</li>
-</ul>
-</nav>
-<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div>
-</aside>
-<div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/vc/svg/menu.svg class=book-icon alt=Menu>
-</label>
+<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Midpoint circle algorithm #  El algoritmo del punto medio del circulo es un algoritmo usado para determinar los puntos necesarios para rasterizar un circulo. Usamos el algoritmo del punto medio para calcular para calcular todos los puntos del perimetro del circulo en un primer octante y luego imprimimos el reflejo de estos puntos en los 7 octantes restantes para completar el circulo. Esto funciona debido a que el circulo es simetrico en cualquier direccion."><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content><meta property="og:description" content="Midpoint circle algorithm #  El algoritmo del punto medio del circulo es un algoritmo usado para determinar los puntos necesarios para rasterizar un circulo. Usamos el algoritmo del punto medio para calcular para calcular todos los puntos del perimetro del circulo en un primer octante y luego imprimimos el reflejo de estos puntos en los 7 octantes restantes para completar el circulo. Esto funciona debido a que el circulo es simetrico en cualquier direccion."><meta property="og:type" content="article"><meta property="og:url" content="https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/Midpoint-circle-algorithm/"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2021-12-13T09:42:24-05:00"><title>Midpoint Circle Algorithm | Visual Computing</title><link rel=manifest href=/vc/manifest.json><link rel=icon href=/vc/favicon.png type=image/x-icon><link rel=stylesheet href=/vc/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous><script defer src=/vc/flexsearch.min.js></script>
+<script defer src=/vc/en.search.min.6c2479168bd3feaeca7c1be4314ff83602f5aa819b17628a082b64aff2011b9e.js integrity="sha256-bCR5FovT/q7KfBvkMU/4NgL1qoGbF2KKCCtkr/IBG54=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/vc/><span>Visual Computing</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li class=book-section-flat><span>Shortcodes</span><ul><li><input type=checkbox id=section-c7f999072490f0d34c2ca3149d93e29f class=toggle>
+<label for=section-c7f999072490f0d34c2ca3149d93e29f class="flex justify-between"><a role=button>Integrantes</a></label><ul><li><a href=https://dmendivelso.github.io/vc/docs/shortcodes/integrantes/DanielMendivelso/>Daniel Mendivelso</a></li><li><a href=https://dmendivelso.github.io/vc/docs/shortcodes/integrantes/FelipeRiano/>Felipe Riano</a></li><li><a href=https://dmendivelso.github.io/vc/docs/shortcodes/integrantes/JonathanJimenez/>Jonathan Jimenez</a></li><li><a href=https://dmendivelso.github.io/vc/docs/shortcodes/integrantes/JuanCarmona/>Juan Carmona</a></li></ul></li><li><input type=checkbox id=section-b7290972bc36e16ab8d0fb9ef0f7309e class=toggle>
+<label for=section-b7290972bc36e16ab8d0fb9ef0f7309e class="flex justify-between"><a href=https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/>Photomosaic</a></label><ul><li><a href=https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/photomasaic_extra/>Photomasaic Extra</a></li><li><a href=https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/photomosaic_hardware/>Photomosaic Hardware</a></li><li><a href=https://dmendivelso.github.io/vc/docs/shortcodes/photomosaic/photomosaic_software/>Photomosaic Software</a></li></ul></li><li><input type=checkbox id=section-36e68ea61276d314d189c2f323841b31 class=toggle checked>
+<label for=section-36e68ea61276d314d189c2f323841b31 class="flex justify-between"><a href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/>Rasterizacion</a></label><ul><li><a href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/Algoritmo-de-Pintor/>Algoritmo De Pintor</a></li><li><a href=https://dmendivelso.github.io/vc/docs/shortcodes/rasterizacion/Midpoint-circle-algorithm/ class=active>Midpoint Circle Algorithm</a></li></ul></li></ul></li><li><input type=checkbox id=section-191d4fa5967ce9fef74cb18feb81d534 class=toggle>
+<label for=section-191d4fa5967ce9fef74cb18feb81d534 class="flex justify-between"><a role=button>Workshops</a></label><ul><li><a href=https://dmendivelso.github.io/vc/docs/workshops/optical_illusions/>Optical Illusions</a></li><li><a href=https://dmendivelso.github.io/vc/docs/workshops/rendering/>Rendering</a></li><li><a href=https://dmendivelso.github.io/vc/docs/workshops/shaders/>Shaders</a></li></ul></li></ul><ul><li><a href=/vc/posts/>Blog</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/vc/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Midpoint Circle Algorithm</strong>
-<label for=toc-control>
-<img src=/vc/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div>
-<aside class="hidden clearfix">
-<nav id=TableOfContents>
-<ul>
-<li><a href=#midpoint-circle-algorithm>Midpoint circle algorithm</a>
-<ul>
-<li><a href=#formulas>Formulas</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-</aside>
-</header>
-<article class=markdown><h1 id=midpoint-circle-algorithm>
-Midpoint circle algorithm
-<a class=anchor href=#midpoint-circle-algorithm>#</a>
-</h1>
-<p>El algoritmo del punto medio del circulo es un algoritmo usado para determinar los puntos necesarios para rasterizar un circulo. Usamos el algoritmo del punto medio para calcular para calcular todos los puntos del perimetro del circulo en un primer octante y luego imprimimos el reflejo de estos puntos en los 7 octantes restantes para completar el circulo. Esto funciona debido a que el circulo es simetrico en cualquier direccion.</p>
-<h2 id=formulas>
-Formulas
-<a class=anchor href=#formulas>#</a>
-</h2>
-<p>F(p) = x^2+y^2-r^2</p>
-<p>Si F(p) &lt; 0, el punto esta dentro del circulo</p>
-<p>Si F(p) = 0, el punto esta en el perimetro</p>
-<p>Si F(p) > 0, el punto esta fuera del circulo</p>
-<p><img src=https://media.geeksforgeeks.org/wp-content/uploads/MID-POINT.jpg alt></p>
-<details><summary>Midpoint circle algorithm</summary>
-<div class=markdown-inner>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>{{&lt; <span style=color:#f92672>p5-iframe</span> <span style=color:#a6e22e>sketch</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/vc/sketches/rasterization.js&#34;</span> <span style=color:#a6e22e>width</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;646&#34;</span> <span style=color:#a6e22e>height</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;646&#34;</span> &gt;}}
-</code></pre></div>
-</div>
-</details>
-<iframe id=rasterization style=width:646px;height:646px srcdoc="
+<label for=toc-control><img src=/vc/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#midpoint-circle-algorithm>Midpoint circle algorithm</a><ul><li><a href=#formulas>Formulas</a></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=midpoint-circle-algorithm>Midpoint circle algorithm
+<a class=anchor href=#midpoint-circle-algorithm>#</a></h1><p>El algoritmo del punto medio del circulo es un algoritmo usado para determinar los puntos necesarios para rasterizar un circulo. Usamos el algoritmo del punto medio para calcular para calcular todos los puntos del perimetro del circulo en un primer octante y luego imprimimos el reflejo de estos puntos en los 7 octantes restantes para completar el circulo. Esto funciona debido a que el circulo es simetrico en cualquier direccion.</p><h2 id=formulas>Formulas
+<a class=anchor href=#formulas>#</a></h2><p>F(p) = x^2+y^2-r^2</p><p>Si F(p) &lt; 0, el punto esta dentro del circulo</p><p>Si F(p) = 0, el punto esta en el perimetro</p><p>Si F(p) > 0, el punto esta fuera del circulo</p><p><img src=https://media.geeksforgeeks.org/wp-content/uploads/MID-POINT.jpg alt></p><details><summary>Midpoint circle algorithm</summary><div class=markdown-inner><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>{{&lt; <span style=color:#f92672>p5-iframe</span> <span style=color:#a6e22e>sketch</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/vc/sketches/rasterization.js&#34;</span> <span style=color:#a6e22e>width</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;646&#34;</span> <span style=color:#a6e22e>height</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;646&#34;</span> &gt;}}
+</span></span></code></pre></div></div></details><iframe id=rasterization style=width:646px;height:646px srcdoc="
         <!DOCTYPE html>
         <html>
           <head>
@@ -177,35 +25,5 @@ Formulas
           <body>
           </body>
         </html>
-      "></iframe>
-</article>
-<footer class=book-footer>
-<div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/cfbb8c810e5aceb14efd7ff8e7d35821c9dbd342 title="Last modified by dmendivelso | December 13, 2021" target=_blank rel=noopener>
-<img src=/vc/svg/calendar.svg class=book-icon alt=Calendar>
-<span>December 13, 2021</span>
-</a>
-</div>
-</div>
-<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
-</footer>
-<div class=book-comments>
-</div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
-<div class=book-toc-content>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#midpoint-circle-algorithm>Midpoint circle algorithm</a>
-<ul>
-<li><a href=#formulas>Formulas</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-</div>
-</aside>
-</main>
-</body>
-</html>
+      "></iframe></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/dmendivelso/vc//commit/cfbb8c810e5aceb14efd7ff8e7d35821c9dbd342 title="Last modified by dmendivelso | December 13, 2021" target=_blank rel=noopener><img src=/vc/svg/calendar.svg class=book-icon alt=Calendar>
+<span>December 13, 2021</span></a></div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#midpoint-circle-algorithm>Midpoint circle algorithm</a><ul><li><a href=#formulas>Formulas</a></li></ul></li></ul></nav></div></aside></main></body></html>
